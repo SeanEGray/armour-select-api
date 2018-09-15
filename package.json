@@ -19,7 +19,9 @@
   "homepage": "https://github.com/SeanEGray/armour-select-api#readme",
   "devDependencies": {
     "eslint": "^5.5.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "should": "^13.2.3",
+    "sinon": "^6.3.3"
   },
   "dependencies": {
     "body-parser": "^1.18.3",

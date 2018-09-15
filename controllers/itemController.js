@@ -2,13 +2,16 @@ const itemController = function (itemModel) {
   const post = function (req, res) {
     var item = new itemModel();
     if (!req.body.name) {
-      res.status(400).send('name is required.');
+      res.status(400);
+      res.send('name is required.');
     }
     else if (!req.body.slot) {
-      res.status(400).send('slot is required.');
+      res.status(400);
+      res.send('slot is required.');
     }
     else if (!req.body.colour) {
-      res.status(400).send('colour is required.');
+      res.status(400);
+      res.send('colour is required.');
     }
     else {
       item.name = req.body.name;
