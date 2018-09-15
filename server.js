@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 
 var db;
 
+// FIXME: Split the URLs out into configs
 if (process.env.ENV == 'Test') {
   db = mongoose.connect('mongodb://localhost/armour-select_test')
 }
