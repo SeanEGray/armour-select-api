@@ -30,8 +30,10 @@ router.get('/', function (req, res) {
 });
 
 itemRouter = require('./routes/itemRoutes')(itemModel);
+outfitRouter = require('./routes/outfitRoutes')(outfitModel);
 
 app.use('/api/items', itemRouter);
+app.use('/api/outfits', outfitRouter);
 
 app.listen(port);
 console.log("Listening on port " + port);
